@@ -1,0 +1,62 @@
+$include-html-classes: true;
+$include-html-global-classes: $include-html-classes;
+$row-width: rem-calc(1440);
+$font-family-sans-serif: "Roboto", sans-serif; //, Helvetica, Arial, sans-serif;
+$font-family-serif: 'Roboto Slab', serif; // Georgia, Cambria, "Times New Roman", Times, serif;
+$white       : #FFFFFF;
+$body-font-family: $font-family-sans-serif;
+$header-font-family: $font-family-serif;
+$header-top-margin: 0;
+$subheader-top-margin: 0;
+$paragraph-font-family: inherit;
+$paragraph-line-height: 1.6;
+$paragraph-margin-bottom: 1.5rem;
+$list-font-family: $paragraph-font-family;
+$accordion-navigation-font-family: $body-font-family;
+$button-font-family: $body-font-family;
+$input-font-family: inherit;
+$label-font-family: $body-font-family;
+$price-title-font-family: $body-font-family;
+$price-money-font-family: $body-font-family;
+$side-nav-font-family: $body-font-family;
+$side-nav-font-family-active: $side-nav-font-family;
+$topbar-bg-color: $white;
+$topbar-bg: $topbar-bg-color;
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $topbar-bg;
+$topbar-dropdown-bg: $topbar-bg;
+$topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-color: $white;
+$topbar-dropdown-toggle-alpha: 0.4;
+$topbar-arrows: false; //Set false to remove the triangle icon from the menu item
+
+
+
+// Media Query Ranges
+$small-range: (0, 40em);
+$medium-range: (40.0625em, 64em);
+$large-range: (64.0625em, 90em);
+$xlarge-range: (90.0625em, 120em);
+$xxlarge-range: (120.0625em, 99999999em);
+
+@import "foundation-global";
+
+// 
+// Foundation Component styles
+// CPC _global.scss styles
+//
+
+$body-font-color: #333;
+
+// Page Offsets - Default + Responsive Sizes
+$global-offset: rem-calc(120);
+
+$global-small-offset: rem-calc(16);
+$global-medium-offset: rem-calc(36);
+$global-large-offset: rem-calc(104);
+$global-xlarge-offset: rem-calc(120);
+
+//Column Gutters
+$column-gutter: rem-calc(32);
+
+$form-label-font-color: orange;

@@ -1,0 +1,22 @@
+/* Sources */
+
+.sources {
+	margin: 3rem 0 0 0; 
+
+	/* Source Label */
+
+	&__label {
+		letter-spacing: 0.5px;
+		line-height: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	/* Source Item */
+
+	&__item {
+		color: $footer-background-color;
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+}

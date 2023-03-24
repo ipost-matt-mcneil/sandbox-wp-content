@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>social-share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="social-share" transform="translate(1.000000, 1.000000)" stroke="#666667" stroke-width="2">
+            <path d="M3.99,7.52 L13.07,2.84" id="Shape"></path>
+            <path d="M13.26,14.63 L4.05,9.89" id="Shape"></path>
+            <circle id="Oval" cx="2.17" cy="8.69" r="2.17"></circle>
+            <circle id="Oval" cx="15.25" cy="2.17" r="2.17"></circle>
+            <circle id="Oval" cx="15.25" cy="15.25" r="2.17"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+/* Banner */
+
+.banner {
+	max-width: 40rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+
+	&--is-post {
+		position: fixed;
+		top: 0;
+	}
+
+	/* Banner Container */
+
+	&__container {
+		margin: 0 auto;
+		max-width: 40rem;
+
+		&--is-post {
+			border-bottom: 20rem solid $white;
+		}
+	}
+
+	/* Banner Image */
+
+	&__img {
+		width: 100%;
+		background: none no-repeat center center/cover;
+		height: 6.25rem;
+		
+		&--is-post {
+			height: 19.5rem;
+		}
+
+		&--no-img {
+			background-image: url("/blogs/wp-c/themes/cpc-ch/img/placeholder.jpg");
+		}
+	}
+}

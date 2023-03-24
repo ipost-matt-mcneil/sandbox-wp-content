@@ -1,0 +1,86 @@
+/* Byline */
+
+.byline {
+	font-weight: 300;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1;
+	margin: 1.5rem 0 3rem 0;
+
+	/* Byline No Avatar */
+
+	&--no-profile-picture {
+
+		.byline__img {
+			display: none;
+		}
+
+		.byline__by {
+			display: inline-block;
+		}
+
+		.byline__name {
+			display: inline-block;
+		}
+
+		.byline__role:before {
+			display: inline-block;
+			content: '|';
+			margin-right: .75rem;
+		}
+	}
+
+	/* Byline Image Wrapper */
+
+	&__img-wrapper {
+		line-height: 1;
+		order: 2;
+	}
+
+	/* Byline Image */
+
+	&__img {
+		border-radius: 2rem;
+		height: 3.75rem;
+		width: 3.75rem;
+		margin-right: 0.75rem;
+	}
+
+	/* Byline Name Wrapper */
+
+	&__name-wrapper {
+		order: 3;
+	}
+
+	/* Byline Name */
+
+	&__by {
+		display: none;
+	}
+
+	&__name {
+		margin-right: 0.50rem;
+		display: block;
+		line-height: 1.5rem;
+	}
+
+	/* Byline Role */
+
+	&__role {
+		color: $body-color;
+		line-height: 1.5rem;
+	
+		&:before {
+			display: none;
+		}
+	}
+
+	/* Byline Share */
+
+	&__share {
+		order: 4;
+		flex: 0 0 100%;
+		margin: 1.5rem 0 0 0;
+	}
+}

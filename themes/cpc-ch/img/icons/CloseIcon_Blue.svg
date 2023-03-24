@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+   <svg width="16" height="16" viewBox="0 0 16 16" id="close" y="0">
+      <title>Close button - grey</title>
+      <g stroke="#2968B2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M.533.533l14.509 14.509M15.467.533L.958 15.042" />
+      </g>
+   </svg>
+</svg>

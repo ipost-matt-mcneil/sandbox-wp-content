@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Article-page-template-and-components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="2_article_related_content_tablet-copy" transform="translate(-84.000000, -939.000000)" stroke="#333333">
+            <g id="Group-3" transform="translate(85.000000, 932.000000)">
+                <g id="Chevron-left" transform="translate(0.000000, 7.000000)">
+                    <polyline id="Path" points="6 0 0 6 6 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

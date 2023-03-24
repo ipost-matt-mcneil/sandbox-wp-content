@@ -1,0 +1,160 @@
+// 
+// Header
+//
+
+.header {
+  width: 100%;
+  background: $white;
+
+// Skip To Main Content
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__skip-to-main-content {
+    position: fixed;
+    top: -400rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    background: $white;
+    z-index: $skip-to-main-content-z-index;
+
+    &:focus {
+      top: 1rem;
+    }
+  }
+
+// Container
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__container {
+    position: relative;
+    z-index: $header-container-z-index;
+    top: 0;
+    width: 100%;
+    background: $white;
+    display: flex;
+    border-bottom: 1px solid $tags-hover-color;
+
+    @media #{$small-up} {
+      height: 3.25rem;
+    }
+
+    @media #{$large-up} {
+      height: 4.5rem;
+    }
+
+     // Is Scrolling
+
+    &--is-scrolling {
+
+      @media #{$small-up} {
+        position: fixed;
+        top: -3.25rem;
+      }
+
+      @media #{$large-up} {
+        top: -4.5rem;
+      }
+    }
+
+    // Is Sticky
+
+    &--is-sticky {
+
+      @media #{$small-up} {
+        position: fixed;
+        top: 0;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+// Hamburger
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__hamburger {
+    display: flex;
+    flex: 0 0 25%;  
+    align-items: center;
+    padding-left: 1.25rem;
+
+    @media #{$large-up} {
+      display: none;
+    }
+  }
+
+// Logo
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__logo {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$large-up} {
+      flex: 0 0 auto;
+      padding: 0 0 0 2.75rem;
+    }
+  }
+
+  /* Header Navigation */
+
+  &__navigation {
+    flex-grow: 1;
+
+    @media #{$large-up} {
+      padding: 0 0 0 2.5rem;
+    }
+  }
+
+// Search
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__search {
+    display: flex;
+    align-items: center;
+    padding-right: 1.25rem;
+  }
+
+// Language
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__language {
+    display: none;
+    align-items: center;
+    padding: 0 2.75rem 0 0;
+
+    @media #{$large-up} {
+      display: flex;
+    }
+
+    // No Navigation
+
+    &--no-nav {
+      display: flex;
+
+      @media #{$small-up} {
+        padding: 0 1.25rem 0 0;
+      }
+
+       @media #{$large-up} {
+        padding: 0 2.75rem 0 0;
+      }
+    }
+
+    // Link
+
+    a {
+      font-weight: 400;
+      color: $footer-background-color;
+      margin-left: 1rem;
+
+      &:hover, 
+      &:focus {
+        text-decoration: none;
+        color: $link-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,285 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Content Hub\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-17 20:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.6; wp-5.5.3"
+
+#: template-parts/archive/events.php:79
+msgid " events scheduled."
+msgstr ""
+
+#: archive.php:37 archive.php:39
+msgid "All posts by "
+msgstr ""
+
+#: campaign.php:33 homepage.php:30 template-parts/single/banner.php:2
+msgid "Banner"
+msgstr ""
+
+#: landing.php:19 landing.php:21 landing.php:23
+msgid "Business Matters"
+msgstr ""
+
+#: campaign.php:76 homepage.php:62 homepage.php:105 homepage.php:186
+#: template-parts/archive/category.php:56
+#: template-parts/archive/category.php:89 template-parts/archive/events.php:107
+#: template-parts/archive/events.php:138 template-parts/archive/list.php:37
+#: template-parts/archive/list.php:66 template-parts/archive/resources.php:58
+#: template-parts/archive/subcategory.php:54
+#: template-parts/archive/subcategory.php:87
+msgid "By"
+msgstr ""
+
+#. Name of the template
+msgid "Campaign Template"
+msgstr ""
+
+#: footer.php:14
+msgid "Canada"
+msgstr ""
+
+#. Author of the theme
+#: inc/header-functions.php:38
+msgid "Canada Post"
+msgstr ""
+
+#: landing.php:15
+msgid "Canada Post blogs"
+msgstr ""
+
+#: footer.php:10
+msgid "Canada Post Corporation"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:6 template-parts/footer/gdpr.php:24
+msgid "change your cookies"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:13 template-parts/footer/gdpr.php:29
+msgid "Click button called I understand to delete the cookies message"
+msgstr ""
+
+#: template-parts/search/search.php:6
+msgid "Close"
+msgstr ""
+
+#. Name of the theme
+msgid "Content Hub"
+msgstr ""
+
+#. Description of the theme
+msgid "Content Hub theme"
+msgstr ""
+
+#: footer.php:1
+msgid "Content information"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:20
+msgid "Cookies on the Canada Post website"
+msgstr ""
+
+#: template-parts/archive/events.php:68
+msgid "Details"
+msgstr ""
+
+#: inc/single-functions.php:155
+msgid "Email post"
+msgstr ""
+
+#: template-parts/archive/events.php:61
+msgid "Event held in"
+msgstr ""
+
+#: homepage.php:81
+msgid "Featured"
+msgstr ""
+
+#: inc/footer-functions.php:9
+msgid "Footer navigation"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:10 template-parts/footer/gdpr.php:27
+msgid "For more information view our privacy policy."
+msgstr ""
+
+#: inc/single-functions.php:142
+msgid "From Canada Post: "
+msgstr ""
+
+#: landing.php:23
+msgid "Go to Business Matters"
+msgstr ""
+
+#: landing.php:31
+msgid "Go to Magazine"
+msgstr ""
+
+#: footer.php:4 footer.php:5
+msgid "Go to the Canada Post homepage"
+msgstr ""
+
+#: inc/theme-functions.php:86
+msgid "Home"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Template"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.canadapost-postescanada.ca"
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.canadapost-postescanada.ca/blogs"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:14 template-parts/footer/gdpr.php:29
+msgid "I understand"
+msgstr ""
+
+#. Name of the template
+msgid "Landing Template"
+msgstr ""
+
+#: template-parts/archive/category.php:100
+#: template-parts/archive/events.php:148 template-parts/archive/list.php:77
+#: template-parts/archive/subcategory.php:98
+msgid "Loading..."
+msgstr ""
+
+#: landing.php:27 landing.php:29 landing.php:31
+msgid "Magazine"
+msgstr ""
+
+#: 404.php:2 archive.php:14 campaign.php:38 homepage.php:28 index.php:2
+#: landing.php:9 page.php:2 single.php:11
+msgid "Main"
+msgstr ""
+
+#: inc/header-functions.php:89
+msgid "Main navigation"
+msgstr ""
+
+#: template-parts/archive/category.php:27 template-parts/archive/events.php:86
+#: template-parts/archive/subcategory.php:27
+msgid "Most recent posts"
+msgstr ""
+
+#: inc/single-functions.php:61 inc/single-functions.php:62
+msgid "Next"
+msgstr ""
+
+#: template-parts/archive/category.php:107
+#: template-parts/archive/events.php:156 template-parts/archive/list.php:86
+#: template-parts/archive/resources.php:76
+#: template-parts/archive/subcategory.php:105
+msgid "No posts found"
+msgstr ""
+
+#: 404.php:8
+msgid "Page not found"
+msgstr ""
+
+#: template-parts/search/search.php:10
+msgid "Please enter a topic. Examples: send packages, change my address"
+msgstr ""
+
+#: inc/single-functions.php:61 inc/single-functions.php:62
+msgid "Prev"
+msgstr ""
+
+#: inc/header-functions.php:10
+msgid "Primary"
+msgstr ""
+
+#: inc/single-functions.php:176
+msgid "Read more by "
+msgstr ""
+
+#: template-parts/archive/events.php:65
+msgid "Register"
+msgstr ""
+
+#: campaign.php:53
+msgid "Related posts"
+msgstr ""
+
+#: inc/header-functions.php:104 inc/header-functions.php:105
+#: template-parts/search/search.php:12
+msgid "Search"
+msgstr ""
+
+#: template-parts/search/search.php:9
+msgid "Search our website"
+msgstr ""
+
+#: template-parts/search/search.php:8
+msgid "Search products, related articles and support topics"
+msgstr ""
+
+#: homepage.php:161 template-parts/archive/resources.php:29
+msgid "See all"
+msgstr ""
+
+#: inc/single-functions.php:152
+msgid "Share post on Facebook"
+msgstr ""
+
+#: inc/single-functions.php:154
+msgid "Share post on LinkedIn"
+msgstr ""
+
+#: inc/single-functions.php:153
+msgid "Share post on Twitter"
+msgstr ""
+
+#: inc/header-functions.php:17
+msgid "Skip to Main Content"
+msgstr ""
+
+#: inc/single-functions.php:102
+msgid "Sources"
+msgstr ""
+
+#: inc/homepage-functions.php:161
+msgid "Supporting navigation"
+msgstr ""
+
+#: inc/single-functions.php:125
+msgid "Tagged"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:8 template-parts/footer/gdpr.php:25
+msgid ""
+"through your browser settings. If you continue without changing your "
+"settings, we'll assume you're ok to receive all cookies on the Canada Post "
+"website."
+msgstr ""
+
+#: template-parts/archive/category.php:99 template-parts/archive/events.php:147
+#: template-parts/archive/list.php:76 template-parts/archive/subcategory.php:97
+msgid "View more posts"
+msgstr ""
+
+#: template-parts/archive/events.php:80
+msgid "We're always updating our event listings, so check back soon!"
+msgstr ""
+
+#: template-parts/footer/gdpr.php:4 template-parts/footer/gdpr.php:23
+msgid ""
+"We've placed cookies on your device to improve your browsing experience. "
+"They're safe and don't contain sensitive information. If you want, you can"
+msgstr ""

@@ -1,0 +1,22 @@
+/*
+Theme Name:   Content Hub
+Theme URI:    https://www.canadapost-postescanada.ca/blogs
+Description:  Content Hub theme
+Author:       Canada Post
+Author URI:   https://www.canadapost-postescanada.ca
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html       
+Text Domain:  cpc-ch
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import "vendors/module";
+@import "abstracts/module";
+@import "base/module";
+@import "layout/module";
+@import "pages/module";
+@import "components/module";
+@import "utils/functions";

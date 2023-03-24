@@ -1,0 +1,178 @@
+// 
+// Footer
+//
+
+.footer {
+  background: $footer-background-color;
+  color: $white;
+  font-weight: 300;
+  position: relative;
+  z-index: $footer-z-index;
+
+  /* Is Anchored */
+
+  &--is-anchored {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+// Container
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90rem;
+
+    @media #{$small-up} {
+      padding: 0;
+    }
+
+    @media #{$medium-up} {
+      padding: 0 3.25rem;
+    }
+
+    @media #{$large-up} {
+      padding: 0 9.5rem;
+    }
+  }
+
+// Link
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__link {
+    color: $white;
+
+    /* Is List */
+
+    &--list {
+      margin-right: 0.75rem;
+
+      &:after {
+        content: '|';
+        color: $mid-grey;
+        margin-left: 0.75rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          content: '';
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+// Canada Post
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__canada-post {
+    order: 1;
+    flex: 0 0 100%;
+
+    @media #{$small-up} {
+      padding-left: 0;
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+    }
+
+    @media #{$medium-up} {
+      text-align: left;
+      margin: 2rem 0 1rem 0;
+    }
+
+    @media #{$large-up} {
+      margin: 2rem 0;
+    }
+  }
+
+// Copyright
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__copyright {
+
+    @media #{$small-up} {
+      order: 3;
+      text-align: center;
+      flex: 0 0 100%;
+      margin: 1rem 0 2rem 0;
+    }
+
+    @media #{$medium-up} {
+      flex: 0 0 50%;
+      text-align: left;
+      border-top: 1px solid $footer-border-color;
+      margin: 1rem 0 0 0;
+      padding: 2rem 0 0 0;
+    }
+
+    @media #{$large-up} {
+      order: 2;
+      flex: 0 0 30%;
+      margin: 0;
+      padding: 2rem 0 2rem 0;
+    }
+  }
+
+// Navigation
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__navigation {
+
+    @media #{$small-up} {
+      margin-top: 2rem;
+      order: 2;
+      flex: 0 0 100%;
+      text-align: center;
+      border-top: 0;
+      margin: 1rem 0;
+    }
+
+    @media #{$medium-up} {
+      text-align: left;
+    }
+
+    @media #{$large-up} {
+      padding: 2rem 0;
+      margin: 0;
+      order: 3;
+      flex: 0 0 40%;
+      text-align: center;
+      border-top: 1px solid $footer-border-color;
+    }
+  }
+
+// Canada
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__canada {
+    order: 4;
+
+    @media #{$small-up} {
+      flex: 0 0 100%;
+      text-align: center;
+      border-top: 1px solid $footer-border-color;
+      padding: 2rem 0 2rem 0;
+    }
+
+    @media #{$medium-up} {
+      flex: 0 0 50%;
+      text-align: right;
+      margin: 1rem 0 0 0;
+    }
+
+    @media #{$large-up} {
+      flex: 0 0 30%;
+      margin: 0;
+    }
+  }
+}

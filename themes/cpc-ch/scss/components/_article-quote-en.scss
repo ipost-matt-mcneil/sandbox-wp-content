@@ -1,0 +1,93 @@
+// 
+// Article Quote
+//
+
+.article-quote--container {
+  position: relative;
+  border: none;
+
+  @media #{$small-up} {
+    margin: 3rem auto 3rem;
+    padding: 4.5rem 0 0 0;
+  }
+
+  @media #{$medium-up} {
+    margin: 3rem auto 3rem;
+    padding: 2rem 4rem 0;
+  }
+
+  @media #{$large-up} {
+    padding: 2rem 5rem 0 5rem;
+  }
+
+  .icon {
+    position: absolute;
+    top: 1.75em;
+    left: 0;
+  }
+  p {
+    color: $body-color;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .attribution-container {
+    margin: 1rem auto 0;
+
+    @media #{$small-only} {
+      margin-left: 1.5rem;
+    }
+
+    img {
+      float: left;
+      border-radius: 2.5rem;
+      width: 4.25rem;
+      height: 4.25rem;
+      margin: 0 1rem 0 0;
+
+      @media #{$small-only} {
+        display: none;
+      }
+    }
+
+    .author {
+      margin: 0 0 1.5rem 0;
+
+      @media #{$medium-up} {
+        margin-left: 1.5rem;
+      }
+
+      span,
+      p {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.25rem 0;
+      }
+
+      .name {
+        font-weight: 400;
+
+        &.attribution-dash {
+
+          &:before {
+            content: '\2014';
+            position: absolute;
+            left: -1.5rem;
+          }
+        }
+
+        @media #{$small-only} {
+
+          &::before {
+            content: '\2014';
+            position: absolute;
+            left: -1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

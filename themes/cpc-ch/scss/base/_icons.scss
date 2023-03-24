@@ -1,0 +1,317 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../img/../img/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 9.6em 68.9em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../../img/sprite.png");
+}
+
+
+
+  .icon.icon--arrow:before {
+      background-position: 0em 0em;
+      width: 0.7em;
+      height: 1.1em;
+  }
+
+
+
+
+  .icon.icon--arrow-black:before {
+      background-position: 0em -1.1em;
+      width: 0.8em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.icon--canada:before {
+      background-position: 0em -2.3em;
+      width: 7.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.icon--checkbox:before {
+      background-position: 0em -4.1em;
+      width: 2.4em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.icon--chevron:before {
+      background-position: 0em -6.5em;
+      width: 1em;
+      height: 0.6em;
+  }
+
+
+
+
+  .icon.icon--chevron:hover:before {
+      background-position: 0em -7.1em;
+      width: 1em;
+      height: 0.6em;
+  }
+
+
+
+
+  .icon.icon--clear:before {
+      background-position: 0em -7.7em;
+      width: 1.8em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.icon--close:before {
+      background-position: 0em -8.9em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.icon--download:before {
+      background-position: 0em -10.5em;
+      width: 1.7em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--download:hover:before {
+      background-position: 0em -12.5em;
+      width: 1.7em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--email:before {
+      background-position: 0em -14.5em;
+      width: 2.4em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.icon--email:hover:before {
+      background-position: 0em -16em;
+      width: 2.4em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.icon--facebook:before {
+      background-position: 0em -17.5em;
+      width: 1em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--facebook:hover:before {
+      background-position: 0em -19.5em;
+      width: 1em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--hamburger:before {
+      background-position: 0em -21.5em;
+      width: 2.4em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.icon--infographics:before {
+      background-position: 0em -23.9em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.icon--language:before {
+      background-position: 0em -26.7em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.icon--linkedin:before {
+      background-position: 0em -28.3em;
+      width: 2.1em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--linkedin:hover:before {
+      background-position: 0em -30.3em;
+      width: 2.1em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--open-in-new-window:before {
+      background-position: 0em -32.3em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.icon--quote-en:before {
+      background-position: 0em -33.7em;
+      width: 9.6em;
+      height: 6.5em;
+  }
+
+
+
+
+  .icon.icon--quote-fr:before {
+      background-position: 0em -40.2em;
+      width: 6.85em;
+      height: 6.5em;
+  }
+
+
+
+
+  .icon.icon--reports:before {
+      background-position: 0em -46.7em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.icon--search:before {
+      background-position: 0em -49.5em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--search-active:before {
+      background-position: 0em -51.5em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.icon--social-share:before {
+      background-position: 0em -53.3em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.icon--social-share:hover:before {
+      background-position: 0em -55.3em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.icon--ticket:before {
+      background-position: 0em -56.9em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.icon--time:before {
+      background-position: 0em -58.5em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.icon--twitter:before {
+      background-position: 0em -59.9em;
+      width: 2.1em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.icon--twitter:hover:before {
+      background-position: 0em -61.6em;
+      width: 2.1em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.icon--videos:before {
+      background-position: 0em -63.3em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+  .icon.icon--webinars:before {
+      background-position: 0em -66.1em;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+
+
+
+

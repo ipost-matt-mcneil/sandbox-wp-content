@@ -1,0 +1,48 @@
+/* Article CTS */
+
+.article-cta--container {  
+	background: $cta-background-color;;
+	padding: 0 1.5rem 1.5rem;
+	margin: 3rem -1.5rem 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	.article-cta--content {
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.article-cta--image {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		height: 6.5rem;
+		margin-bottom: 1.5rem;
+		left: -1.5rem;
+		width: calc(100% + 3rem);
+	}
+
+  &.no-feature--image {
+		text-align: center;
+		padding: 1.5rem;
+		margin: 3rem -1.5rem 0;   
+
+		.article-cta--image {
+			display: none;
+		} 
+
+		.article-cta--content {
+			margin: auto;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&.article-cta--container-inline {
+	margin: 3rem 0;
+	padding: 1.5rem;
+	}
+}

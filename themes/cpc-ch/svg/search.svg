@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Search_icon_global</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search_icon_global" stroke="#666666">
+            <g transform="translate(2.000000, 2.000000)">
+                <circle id="Oval" cx="6" cy="6" r="6"></circle>
+                <path d="M10.5,10.5 L16.5,16.5" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

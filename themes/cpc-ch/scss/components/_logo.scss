@@ -1,0 +1,17 @@
+/* Logo */
+
+.logo {
+  max-height: 2rem;
+
+  &--desktop {
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media #{$medium-up} {
+      display: none;
+    }
+  }
+}

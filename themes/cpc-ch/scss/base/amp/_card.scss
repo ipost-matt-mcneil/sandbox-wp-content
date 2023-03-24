@@ -1,0 +1,98 @@
+/* Card */
+
+.card {
+	color: $body-color;
+	display: block;
+	position: relative;
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $body-color;
+
+		.card__title {
+			border-bottom: 1px solid $link-color;
+		}
+
+		.card__img {
+			background-size: auto 105%;
+		}
+
+		.card__overlay {
+			background-size: 197%;
+		}
+	}
+
+/* Card Image Wrapper */
+
+	&__img-wrapper {
+		position: relative;
+	}
+
+/* Card Image */
+
+	&__img {
+		width: 100%;
+		height: inherit;
+		display: inline-block;
+		float: left;
+		background-position: center center;
+		transition: background-size 0.3s linear;
+		background-size: auto 100%;
+		
+		&:after {
+			clear: both;
+			content: ' ';
+		}
+
+		&:hover {
+			background-size: auto 105%;
+		}
+
+		&--no-img {
+			background-image: url("/blogs/wp-c/themes/cpc-ch/img/placeholder.jpg");
+		}
+	}
+
+/* Card Ratio */
+
+	&__ratio {
+		margin-top: 56.25%;
+	}
+
+/* Card Overlay */
+
+	&__overlay {
+		display: none;
+  }
+
+  &__white-overlay {
+		display: none;
+	}
+
+/* Card Text */
+
+	&__text {
+		background: $transparency-color;
+		position: relative;
+		clear: both;
+		margin: 0 0 3rem 0;
+		padding: 1rem 0 0 0;
+	}
+
+/* Card Title */
+
+	&__title {
+		display: inline;
+		font-family: $body-font;
+		font-weight: 300;
+		line-height: 1.75rem;
+		font-size: 1.125rem;
+	}
+
+/* Card Author */
+
+	&__author {
+		margin-top: 1rem;
+		font-weight: 300;
+	}
+}

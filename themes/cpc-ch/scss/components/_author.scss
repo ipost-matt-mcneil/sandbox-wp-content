@@ -1,0 +1,139 @@
+/* Author */
+
+.author {
+	font-weight: 300;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1;
+
+	@media #{$small-up} {
+		margin: 1.5rem 0 3rem 0;
+	}
+
+	@media #{$medium-up} {
+		margin: 1.5rem 0 3.75rem 0;
+	}
+
+	/* Author No Avatar */
+
+	&--no-avatar {
+
+		.author__img {
+			display: none;
+		}
+
+		.author__img-wrapper:before {
+			content: 'By';
+			margin-right: 0.25rem;
+			position: relative;
+		}
+
+		.author__name {
+			display: inline-block;
+		}
+
+		.author__role:before {
+
+			@media #{$small-up} {
+				content: '|';
+			}
+		}
+	}
+
+	/* Author Image Wrapper */
+
+	&__img-wrapper {
+		line-height: 1;
+
+		@media #{$small-up} {
+			order: 2;
+		}
+
+		@media #{$large-up} {
+			order: 1;
+		}
+	}
+
+	/* Author Image */
+
+	&__img {
+		border-radius: 2rem;
+		height: 3.75rem;
+		width: 3.75rem;
+		margin-right: 0.75rem;
+	}
+
+	/* Author Name Wrapper */
+
+	&__name-wrapper {
+
+		@media #{$small-up} {
+			order: 3;
+		}
+
+		@media #{$large-up} {
+			order: 2;
+		}
+	}
+
+	/* Author Name */
+
+	&__name {
+		margin-right: 0.50rem;
+		line-height: 1;
+
+		@media #{$small-up} {
+			display: block;
+		}
+
+		@media #{$medium-up} {
+			display: inline-block;
+		}
+	}
+
+	/* Author Role */
+
+	&__role {
+		color: $body-color;
+		line-height: 1;
+
+		&:before {
+			color: $footer-border-color;
+			margin-right: 0.75rem;
+
+			@media #{$small-up} {
+				content: '';
+			}
+
+			@media #{$medium-up} {
+				content: '|';
+			}
+		}
+	}
+
+	/* Author Share */
+
+	&__share {
+
+		@media #{$small-up} {
+			order: 1;
+			flex: 0 0 100%;
+			margin: 0 0 1.5rem 0;
+		}
+
+		@media #{$large-up} {
+			flex: 0 0 35%;
+			order: 4;
+			margin: 0 0 0 auto;
+			text-align: right;
+		}
+	}
+}
+
+html[lang="fr"] {
+	.author--no-avatar .author__img-wrapper:before {
+		content: "Par";
+	}
+}
+

@@ -1,0 +1,33 @@
+/* Tags */
+
+.tags {
+	margin: 3rem 0 0; 
+
+	/* Tags Label */
+
+	&__label {    
+		letter-spacing: 0.5px;
+		line-height: 1.5rem;
+		margin: 0 0.5rem 0.75rem 0; 
+		display: inline-block;
+	}
+
+	/* Tags Link */
+
+	&__link {  
+		background: $cta-background-color;  
+		color: $link-color;
+		display: inline-block;
+		whitespace: nowrap;
+		border-radius: 1.25rem;
+		font-weight: 300;
+		padding: 0.5rem 0.75rem;
+		margin: 0 0.5rem 0.75rem 0; 
+
+		&:hover, 
+		&:focus {
+			background: $tags-hover-color;
+			text-decoration: none;
+		}
+	}
+}

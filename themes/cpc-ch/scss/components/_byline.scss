@@ -1,0 +1,163 @@
+/* Byline */
+
+.byline {
+	font-weight: 300;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1;
+
+	@media #{$small-up} {
+		margin: 1.5rem 0 3rem 0;
+	}
+
+	@media #{$medium-up} {
+		margin: 1.5rem 0 3.75rem 0;
+	}
+
+	/* Byline No Avatar */
+
+	&--no-profile-picture {
+
+		.byline__img {
+			display: none;
+		}
+
+		.byline__by {
+			display: inline-block;
+		}
+
+		.byline__name {
+			display: inline-block;
+		}
+
+		.byline__role:before {
+			content: '|';
+			display: inline-block;
+		}
+	}
+
+	/* Byline Image Wrapper */
+
+	&__img-wrapper {
+		line-height: 1;
+
+		@media #{$small-up} {
+			order: 2;
+		}
+
+		@media #{$large-up} {
+			order: 1;
+		}
+	}
+
+	/* Byline Image */
+
+	&__img {
+		border-radius: 2rem;
+		height: 3.75rem;
+		width: 3.75rem;
+		margin-right: 0.75rem;
+	}
+
+	/* Byline Name Wrapper */
+
+	&__name-wrapper {
+		line-height: 1.5;
+
+		@media #{$small-up} {
+			order: 3;
+			width: auto;
+		}
+
+		@media #{$medium-up} {
+			width: calc(100% - 4.5rem);
+		}
+
+		@media #{$large-up} {
+			order: 2;
+			width: calc(100% - 14.75rem);
+		}
+	}
+
+	/* Byline By */
+
+	&__by {
+		display: none;
+	}
+
+	/* Byline Name */
+
+	&__name {
+		margin-right: 0.50rem;
+
+		@media #{$small-up} {
+			display: block;
+			line-height: 1.5rem;
+		}
+
+		@media #{$medium-up} {
+			display: inline-block;
+			line-height: 1;
+		}
+
+		&:visited {
+			color: $link-color;
+		}
+	}
+
+	/* Byline Role */
+
+	&__role {
+		color: $body-color;
+
+		@media #{$small-up} {
+			line-height: 1.5rem;
+		}
+
+		@media #{$medium-up} {
+			line-height: 1;
+		}
+
+		&:before {
+			color: $footer-border-color;
+			margin-right: 0.75rem;
+
+			@media #{$small-up} {
+				content: '';
+				display: none;
+			}
+
+			@media #{$medium-up} {
+				content: '|';
+				display: inline-block;
+			}
+		}
+	}
+
+	/* Byline Share */
+
+	&__share {
+
+
+		@media #{$small-up} {
+			order: 4;
+			flex: 0 0 100%;
+			margin: 1.5rem 0 0 0;
+
+			&--is-desktop {
+				display: none;
+			}
+
+			&--no-author {
+				margin: 0 0 0 0;
+			}
+		}
+
+		@media #{$large-up} {
+			flex: 0 0 9.5rem;
+			margin: 0 0 0 auto;
+			text-align: right;
+		}
+	}
+}

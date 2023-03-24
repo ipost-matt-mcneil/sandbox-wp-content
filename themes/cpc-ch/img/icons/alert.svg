@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Glyph-Alert">
+            <g id="Group" transform="translate(4.000000, 4.000000)">
+                <polygon id="Stroke-1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="7.96452174 0 0 16 16 15.9701818"></polygon>
+                <path d="M8,10.1965594 L8,6" id="Stroke-3" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7,12.8888889 C7,12.3974603 7.39746032,12 7.88888889,12 C8.38031746,12 8.77777778,12.3974603 8.77777778,12.8888889 C8.77777778,13.3803175 8.38031746,13.7777778 7.88888889,13.7777778 C7.39746032,13.7777778 7,13.3803175 7,12.8888889" id="Fill-4" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

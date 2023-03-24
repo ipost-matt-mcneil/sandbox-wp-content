@@ -1,0 +1,50 @@
+/* Overlay */
+
+.overlay {
+
+	 /* Overlay Image  */
+
+	&__img {
+
+		@media #{$small-up} {
+			display: none;
+		}
+
+		@media #{$large-up} {
+			background-attachment: fixed;
+			background-position: top 0 center;
+			background-size: 90rem 30.75rem;
+			background-repeat: no-repeat;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			filter: blur(0.5rem);
+			display: block;
+			height: 20.75rem;
+		}
+	}
+
+	/* Overlay White */
+
+	&__white {
+
+		@media #{$small-up} {
+			display: none;
+		}
+
+		@media #{$medium-up} {
+			display: block;
+			width: 100%;
+			height: 50rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $white;
+		}
+
+		@media #{$large-up} {
+			background: $transparency-color;
+		}
+	}
+}

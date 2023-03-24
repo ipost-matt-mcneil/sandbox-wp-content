@@ -1,0 +1,70 @@
+// 
+// Events
+//
+
+.events-empty-container {
+  margin: 0.5rem auto 7rem;
+  display: block;
+  text-align: left;
+
+  h2 {
+    font-family: $font-family-sans-serif;
+  }
+  
+  @media #{$medium-up} {
+    text-align: center;
+  }
+
+  #eventsEmpty {
+    height: 12.5rem;
+    margin: 0 auto;
+  }
+
+  #eventsEmptyImage {
+    height: 12.5rem;
+    margin: 0 auto;
+    background: url("/blogs/wp-c/themes/cpc-ch/img/icons/Events-EmptyState.svg") no-repeat center center;
+  }
+}
+
+.tiles {
+  &.events {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    &::before {
+      display:inline;
+    }
+  }
+
+  &__item_event {
+    flex: 0 0 auto;
+  }
+
+  @media #{$medium-up} {
+    &__item_event:nth-child(2n+1) {
+      clear: right;
+    }
+  }  
+
+  @media #{$large-up} {
+    &__item_event:nth-child(3n+1) {
+      clear: right;
+    }
+  }
+}
+
+
+.tiles__item_event .card__img-wrapper { height: 13rem; }
+.tiles__item_event .card__text { padding: 1rem 0 5.5rem; }
+.tiles__item_event .card__text .card__title { display: inline-block; margin-bottom: 0.5rem; font-family: "Roboto Slab", serif; }
+.tiles__item_event .card__text .location,
+.tiles__item_event .card__text p { margin-bottom: 1rem; }
+.tiles__item_event .card__text p.language { margin-bottom: 0.5rem; }
+.tiles__item_event .card__text p.price { margin-bottom: 1rem; }
+.tiles__item_event .card__text .button-container .link { text-align: center; }
+.event_date { position: absolute; padding: 0.375rem 0.75rem; top: 0.75rem; left: 0.75rem; text-align: center; background-color: rgba(255,255,255,0.9); color: #111; width: 4rem; }
+.event_date > span { display: block; font-family: "Roboto Slab", serif; font-weight: 300; line-height: 1.125; }
+.event_date .month {  font-size: 1.25rem; }
+.event_date .day { font-size: 1.75rem; }

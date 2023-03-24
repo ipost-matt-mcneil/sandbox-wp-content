@@ -1,0 +1,107 @@
+@import '../foundation/components/global';
+
+//
+// This utility is to expand the content(inside our grid) with full page width
+//
+
+$cpc-page-offsets: (
+        small: $global-small-offset, // 1rem
+        medium: $global-medium-offset, // 2.25rem
+        large: $global-large-offset, // 6.5rem
+        xlarge: $global-xlarge-offset // 7.5rem
+);
+
+/**
+ * CPC page layout has the following structure:
+ * --------------------------------------------
+ * <div id='#main-content'>
+ *   <div class='row>
+ *	   <div class='row iw_container'> ( margin: 0 -1rem)
+ *		 <div class='cpc-component'>
+ *         ....
+ *
+ * There are 2 scenarios that 'cpc-page-width' class could be located:
+ *    1. <div class='row cpc-page-width'> or <div class='cpc-page-width'>
+ *       as child of 'cpc-component'
+ *       There will be -1rem margin on both side of page content caused by 'iw-container'
+ *
+ *    2. <div class='row'>
+ *         <div class='cpc-page-width'>, as child of 'cpc-component'
+ *       There will be -2rem margin on both side of page content caused by 'iw-container' and '.row.row'
+ *
+ * To correctly calculate whitespace width of the page content, we need to minus
+ * this margin 'compensated' by 'iw-container' and/or '.row.row'.
+ */
+$cpc-content-margin-adjusts: (
+        no-row: 1rem,
+        child-of-row: 2rem
+);
+
+/**
+ * To calculate the whitespace width on one side of the page content. See _base.scss.
+ *
+ * @screen - The screen size. Only accept: small, medium, large, xlarge.
+ * @margin-adjust - The name of margin adjusts. See $cpc-content-margin-adjusts definition above.
+ * @return - Return the one side whitespace width of the page content
+ */
+@function cpc-page-ws($screen: 'small', $margin-adjust: 'no-row') {
+  @return map-get($cpc-page-offsets, $screen) + ($column-gutter / 2)
+        - map-get($cpc-content-margin-adjusts, $margin-adjust);
+}
+
+/**
+ * Generates the style of full-page-width
+ */
+@mixin cpc-page-width($screen: 'small', $margin-adjust: 'no-row') {
+  width: calc(100% + #{cpc-page-ws($screen, $margin-adjust) * 2});
+  margin-left: -#{cpc-page-ws($screen, $margin-adjust)};
+}
+
+$cpc-screen-types: (
+        small: $small-up,
+        medium: $medium-up,
+        large: $large-up,
+        xlarge: $xlarge-up
+);
+
+/**
+ * Generates the media query of full-page-width
+ */
+@mixin cpc-page-width-mediaQ($margin-adjust: 'no-row') {
+  @each $scrn in 'medium', 'large', 'xlarge' {
+    @media #{map-get($cpc-screen-types, $scrn)} {
+      @include cpc-page-width($scrn, $margin-adjust);
+    }
+  }
+}
+
+
+// use '.cpc-page-width' without '.row', or with '.row. in the same element
+//
+.cpc-page-width,
+.row.cpc-page-width {
+  @include cpc-page-width();
+  @include cpc-page-width-mediaQ();
+}
+
+// just in case anyone wants to use '.cpc-page-width-row' as child of '.row'
+//
+.cpc-page-width-row {
+  @include cpc-page-width('small', 'child-of-row');
+  @include cpc-page-width-mediaQ('child-of-row');
+}
+
+// full page width shared styles
+//
+.cpc-page-width,
+.row.cpc-page-width,
+.cpc-page-width-row {
+  max-width: 90rem;
+
+  .column,
+  .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

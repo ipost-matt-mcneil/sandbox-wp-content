@@ -1,0 +1,218 @@
+/* Tables */
+
+.table {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 3rem;
+
+	/* Table Previous */
+
+	&__prev {
+		margin: 1.5rem 0 2.25rem 0;
+		display: none;
+
+		&--is-active {
+			display: inline-block;
+		}
+
+		@media #{$large-up} {
+			display: none;
+
+			&--is-active {
+				display: none;
+			}
+		}
+	}
+
+	/* Table Next */
+
+	&__next {
+		position: absolute;
+		top: 1.5rem;
+		right: 0;
+		display: none;
+
+		&--is-active {
+			display: block;
+		}
+
+		@media #{$large-up} {
+			display: none;
+
+			&--is-active {
+				display: none;
+			}
+		}
+	}
+
+	/* Table Icon */
+
+	&__icon {
+		position: relative;
+		top: -4px;
+		margin-left: 0.75rem;
+
+		&--is-prev {
+			margin-right: 0.75rem;
+		}
+
+		&--is-next {
+			transform: rotate(180deg);
+		}
+	}
+
+	/* Table Table */
+
+	&__table {
+		width: 100%;
+		border: 0;
+		border-collapse: collapse;
+		position: relative;	
+	}
+
+	/* Table Row */
+
+	&__row {
+		border-bottom: 1px solid $footer-border-color;
+		width: 100%;
+	}
+
+	/* Table Cell */
+
+	&__cell {
+		padding: 1.5rem;
+		border: 0;
+		word-wrap: break-word;
+		vertical-align: top;
+		overflow: hidden;
+		font-weight: 300;
+
+		@media #{$medium-only} {
+			position: absolute;
+			display: inline-block;
+			left: 50%;
+			width: 50%;
+			color: $white;
+			visibility: hidden;
+		}
+
+		@media #{$small-only} {
+			position: absolute;
+			display: inline-block;
+			left: 50%;
+			width: 50%;
+			color: $white;
+			visibility: hidden;
+		}
+
+		/* Table Cell Is Active */
+
+		&--is-active {
+			position: relative;
+			left: initial;
+			color: $body-color;
+			z-index: 9;
+
+			@media #{$large-up} {
+				position: relative;
+				background: transparent;
+			}
+			@media #{$medium-only} {
+				visibility: visible;
+			}
+			@media #{$small-only} {
+				visibility: visible;
+			}
+		}
+
+		/* Table Cell Is First */
+
+		&--is-first {
+			position: relative;
+			left: initial;
+			background: $white;
+			z-index: 10;
+			color: $body-color;
+			visibility: visible;
+
+			@media #{$large-up} {
+				background: transparent;
+			}
+		}
+
+		/* Table Cell Is Previous In */
+
+		&--is-prev-in {
+			animation: slideInLeft .5s ease-in-out;
+			color: $body-color;
+			z-index: 9;
+			
+			@media #{$medium-only} {
+				position: relative;
+				width: 50%;
+			}
+
+			@media #{$small-only} {
+				position: relative;
+				width: 50%;
+			}
+		}
+
+		/* Table Cell Is Previous Out */
+
+		&--is-prev-out {
+			animation: slideOutRight .5s ease-in-out;
+			color: $body-color;
+			z-index: 9;
+
+			@media #{$medium-only} {
+				position: absolute;
+				left: 50%;
+			}
+
+			@media #{$small-only} {
+				position: absolute;
+				left: 50%;
+			}
+		}
+
+		/* Table Cell Is Next In */
+
+		&--is-next-in {
+			animation: slideInRight .5s ease-in-out;
+			color: $body-color;
+			z-index: 9;
+			
+			@media #{$medium-only} {
+				position: relative;
+				left: 0;
+				width: 50%;
+			}
+
+			@media #{$small-only} {
+				position: relative;
+				left: 0;
+				width: 50%;
+			}
+		}
+
+		/* Table Cell Is Next Out */
+
+		&--is-next-out {
+			animation: slideOutLeft .5s ease-in-out;
+			color: $body-color;
+			z-index: 9;
+
+			@media #{$medium-only} {
+				position: absolute;
+				left: 50%;
+			}
+
+			@media #{$small-only} {
+				position: absolute;
+				left: 50%;
+			}
+		}
+	}
+}

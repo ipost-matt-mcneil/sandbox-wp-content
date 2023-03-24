@@ -1,0 +1,44 @@
+// 
+// Buttons 
+//
+
+.button {
+
+	&:focus {
+  	background-color: $mid-blue;
+  	border-color: $mid-blue;
+
+  	&:hover {
+  		background-color: $cross-sell-color;
+			border-color: $cross-sell-color;
+  	}
+	}
+
+	&--is-view-more {
+		min-width: 10.5rem;
+	}
+
+	&--is-disabled {
+		 pointer-events: none;
+	}
+	
+	&.secondary {
+		&:hover,
+		&:focus {
+			border: 1px solid $cp-blue;
+			background-color: transparent;
+			color: $cp-blue;
+			box-shadow: 0 0 0 1px $cp-blue;
+		}
+	}
+
+	&.text-button,
+  &.link {
+		&:hover,
+		&:focus {
+			color: $mid-blue;
+			text-decoration: underline;
+			background-color: transparent;
+		}
+	}
+}

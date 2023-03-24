@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
+   <svg width="10" height="20" viewBox="0 0 10 20" id="facebook" y="0">
+      <title>facebook-logo</title>
+      <g transform="translate(-14 -4)" fill="none" fill-rule="evenodd">
+         <path d="M0 0h24v24H0z" />
+         <path d="M20.222 10.546V8.825c0-.258.012-.459.036-.6.024-.142.079-.28.164-.418a.669.669 0 0 1 .412-.285c.19-.053.442-.08.758-.08h1.721V4h-2.752c-1.592 0-2.736.378-3.431 1.133-.695.756-1.042 1.87-1.042 3.34v2.073h-2.062v3.444h2.061v9.99h4.135v-9.99h2.751l.364-3.444h-3.115z" fill="#666" fill-rule="nonzero" />
+      </g>
+   </svg>
+</svg>

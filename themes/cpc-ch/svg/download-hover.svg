@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="20"
+     viewBox="0 0 17.28 19.52">
+  <svg width="17" height="20" viewBox="0 0 17.28 19.52" id="download-hover" y="0">
+    <title>download-hover</title>
+    <g fill="#2968B2" fill-rule="evenodd">
+      <polygon points="14.09 7.57 10.8 7.57 10.8 0 6.48 0 6.48 7.57 3.19 7.57 8.64 13.09 14.09 7.57"/>
+      <path d="M14.26,14.47l-.22,2H3.24l-.22-2H0l.4,3.7a1.5,1.5,0,0,0,1.49,1.35h13.5a1.5,1.5,0,0,0,1.49-1.35l.4-3.7Z"/>
+    </g>
+  </svg>
+</svg>

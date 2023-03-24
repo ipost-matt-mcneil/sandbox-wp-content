@@ -1,0 +1,292 @@
+/* Typography */
+
+h1, h2, h3 {
+  font-family: $heading-font;
+  font-weight: 300;
+}
+
+h1 {
+  color: $body-color;
+  letter-spacing: 1.1px;
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  line-height: 2.75rem;
+
+  @media #{$small-only} {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+h2 {
+  a {
+    color: $body-color;
+
+    &:hover, &:focus {
+      color: $body-color;
+      text-decoration: none;
+      border-bottom: 1px solid $link-color;
+    }
+  }
+}
+
+h3 {
+  letter-spacing: 0.4px;
+}
+
+h4 {
+  margin-top: 2rem;
+}
+
+h5 {
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: $body-color;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  line-height: 1.5;
+}
+
+p + p,
+p + .content,
+.content + p,
+.content + .content {
+  margin: 0 0 1.5rem;
+}
+
+p,
+.content {
+  & + input[type="button"],
+  & + input[type="reset"],
+  & + input[type="submit"],
+  & + button,
+  & + .button {
+    margin-top: 1.5rem;
+  }
+}
+
+p:empty {
+  display: none;
+}
+
+/* Entry Content */
+
+.entry-content {
+
+  img + a {
+    margin-top: 1.5rem;
+    display: inline-block;
+  }
+
+  a {
+    &:visited {
+      color: $link-color;
+    }
+  }
+
+  a.button {
+    &:visited {
+      color: $white;
+    }
+  }
+
+  .citation {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    display: block;
+    color: $footer-background-color;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  ul,
+  ol {
+    margin: 1.5rem 1rem 0.5rem 0;
+    list-style-position: outside;
+    padding: 0 0 0 1rem;
+    font-weight: 300;
+  }
+
+  ol {
+    padding: 0 0 0 1.25rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    padding: 0 0 0 0;
+  }
+
+  div.wp-caption {
+    width: 100% !important;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    &.alignleft {
+      display: inline;
+      float: left;
+      margin-right: 1.5em;
+    }
+
+    &.alignright {
+      display: inline;
+      float: right;
+      margin-left: 1.5em;
+    }
+
+    &.aligncenter {
+      clear: both;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  div.wp-caption img {
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  img + p.wp-caption-text {
+    margin: 0 0 3rem 0;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $footer-background-color;
+  }
+
+  ul + div,
+  ol + div {
+    margin-top: 3rem;
+  }
+
+  @for $index from 1 through 6 { // apply this style to heading 1 to 6
+    ul + h#{$index}, ol + h#{$index} {
+      margin-top: 3rem;
+    }
+  }
+
+  p + ul.ch-article-checklist-list {
+    margin-top: 3rem;
+  }
+
+  p + h2 {
+    padding-top: $line-spacing;
+  }
+}
+
+.entry-content > p:first-of-type {
+
+  &:first-letter {
+    font-family: $heading-font;
+    float: left;
+    font-size: 4rem;
+    line-height: 3.25rem;
+    padding: 0;
+    margin: 0.25rem 1rem 0 0;
+    color: $footer-background-color;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @media #{$small-only} {
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+3.0 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nowrap {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+Superscripting in article contents
+--------------------------------------------------------------*/
+.main__content--is-single {
+  h1 sup {
+    font-weight: 600;
+    vertical-align: super;
+    position: relative;
+    top: -4px;
+    font-size: .75rem;
+  }
+
+  h2 sup {
+    font-weight: 400;
+    vertical-align: super;
+    position: relative;
+    top: -3px;
+  }
+
+  h3 sup {
+    font-weight: 600;
+    vertical-align: super;
+    position: relative;
+    top: -1px;
+  }
+  h4 sup {
+    font-weight: 400;
+    vertical-align: super;
+    position: relative;
+    top: 0px;
+  }
+
+  p sup {
+    font-weight: 300;
+    position: relative;
+    top: -6px;
+  }
+  a sup {
+    font-weight: 400;
+    position: relative;
+    top: -6px;
+    font-size: 0.5rem;
+  }
+}

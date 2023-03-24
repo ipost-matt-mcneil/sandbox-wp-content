@@ -1,0 +1,100 @@
+// 
+// Footer
+//
+
+.footer {
+  background: $footer-background-color;
+  color: $white;
+  font-weight: 300;
+  position: relative;
+  z-index: $footer-z-index;
+  max-width: 40rem;
+	margin: 0 auto;
+
+// Container
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90rem;
+    padding: 0;
+  }
+
+// Link
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__link {
+    color: $white;
+
+    /* Is List */
+
+    &--list {
+      margin-right: 0.75rem;
+
+      &:after {
+        content: '|';
+        color: $mid-grey;
+        margin-left: 0.75rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          content: '';
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+// Canada Post
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__canada-post {
+    order: 1;
+    flex: 0 0 100%;
+    padding-left: 0;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+
+// Copyright
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__copyright {
+    order: 3;
+    text-align: center;
+    flex: 0 0 100%;
+    margin: 1rem 0 2rem 0;
+  }
+
+// Navigation
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__navigation {
+    margin-top: 2rem;
+    order: 2;
+    flex: 0 0 100%;
+    text-align: center;
+    border-top: 0;
+    margin: 1rem 0;
+  }
+
+// Canada
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  &__canada {
+    order: 4;
+    flex: 0 0 100%;
+    text-align: center;
+    border-top: 1px solid $footer-border-color;
+    padding: 2rem 0 2rem 0;
+  }
+}

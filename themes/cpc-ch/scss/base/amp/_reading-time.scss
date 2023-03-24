@@ -1,0 +1,14 @@
+/* Reading Time */
+
+.reading-time {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+
+	/* Reading Time Icon */
+
+	&__icon {
+		position: relative;
+		top: -3px;
+		margin-right: 0.25rem;
+	}
+}

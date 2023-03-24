@@ -1,0 +1,85 @@
+// 
+// Maintenance (503)
+//
+
+.maintenance {
+
+// Tiles
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	.tiles {
+
+		@media #{$small-up} {
+			margin: 3.75rem 0 2rem 0;
+		}
+
+		@media #{$medium-up} {
+			margin: 5.25rem 0 -1rem 0;
+		}
+
+		@media #{$large-up} {
+			margin: 6.25rem 0 3.75rem 0;
+		}
+
+// Tiles Item
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+		&__item {
+
+			&:nth-child(2) {
+				@media #{$small-only} {
+					padding-bottom: 3.75rem;
+				}
+
+				@media #{$medium-up} {
+					padding-right: 3rem;
+				}
+			}
+
+			&:last-child {
+				@media #{$medium-up} {
+					border-left: 1px solid $cta-background-color;
+					padding-left: 5.25rem;
+				}
+			}
+		}
+	}
+
+// Card
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	.card {
+
+		&__img-wrapper {
+			text-align: center;
+		}
+
+// Card Image
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+		&__img {
+			float: none;
+			display: inline-block;
+			width: 26.25rem;
+
+			@media #{$small-up} {
+				margin-bottom: 2rem; 
+			}
+
+			@media #{$medium-up} {
+				margin-bottom: 3.25rem; 
+			}
+
+			@media #{$large-up} {
+				margin-bottom: 6.25rem; 
+			}
+		}
+	}
+
+// Button
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	.button {
+		margin-top: 0;
+	}
+}

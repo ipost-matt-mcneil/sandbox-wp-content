@@ -1,0 +1,255 @@
+/* Cross-sell */
+
+.cross-sell {
+	background-image: linear-gradient(221deg, $gradient-right-color 0%, $gradient-left-color 93%);
+	display: block;
+	color: $white;
+	border-radius: 3rem 0 0 0;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 3rem;
+	letter-spacing: 0.4px;
+	line-height: 1.5rem;
+
+	@media #{$small-up} {
+		max-height: 17rem;
+	}
+
+	@media #{$medium-up} {
+		max-height: 27rem;
+	}
+
+	/* Cross-sell Is Full Width */
+
+	&--is-full-width {
+		border-radius: 0;
+		clear: left;
+		max-height: inherit;
+	}
+
+	/* Cross-sell Is Home */
+
+	&--is-home {
+
+		@media #{$medium-up} {
+			margin-bottom: 3.75rem;
+			margin-top: 1.75rem;
+		}
+
+		@media #{$small-only} {
+			margin-top: 1rem;
+			margin-bottom: 3rem;
+		}
+
+	}
+
+/* Cross-sell Container */
+
+	&__container {
+		padding: 0 1rem; 
+		height: inherit;
+		display: inline-block;
+		float: left;
+
+		@media #{$small-up} {
+			width: calc(100% + 2rem);
+		}
+
+		@media #{$large-up} {
+			width: calc(200% + 4rem);
+		}
+
+		// Full Width
+
+		&--is-full-width {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+/* Cross-sell Text */
+
+	&__text {
+		text-align: center;
+		padding: 2rem 0;
+		
+		@media #{$small-up} {
+			flex: 0 0 100%;
+			order: 2;
+		}
+
+		@media #{$medium-up} {
+			flex: 0 0 66.66%;
+			order: 1;
+		}
+
+		&--is-full-width {
+			@media #{$medium-up} {
+				flex: 0 0 100%;
+			}
+		}
+	}
+
+/* Cross-sell Image */
+
+	&__img {
+		flex: 0 0 auto;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+
+		@media #{$small-up} {
+			flex: 0 0 100%;
+			width: 100%;
+    	height: 12.5rem;
+    	order: 1;
+		}
+
+		@media #{$medium-up} {
+			flex: 0 0 33.33%;
+			order: 2;
+			height: auto;
+		}	
+
+		&--is-horizonally-aligned {
+			background-size: contain;
+
+			@media #{$small-up} {
+				margin: 1rem 0 0 0;
+			}
+			
+			@media #{$medium-up} {
+				margin: 1rem 0;
+			}
+		}
+
+	}
+
+/* Cross-sell Ratio */
+
+	&__ratio {
+
+		@media #{$small-up} {
+			margin-top: 100%;
+		}
+
+		@media #{$large-up} {
+			margin-top: 56.25%;
+		}
+	}
+
+/* Cross-sell Title */
+
+	&__title {
+		position: absolute;
+		top: 1.5rem;
+		left: 1.5rem;
+		width: calc(100% - 3rem);
+	}
+
+/* Cross-sell Icon */
+
+	&__icon {
+		margin-bottom: 1rem;
+		display: block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		@media #{$small-up} {
+			width: 5rem;
+			height: 5rem;
+		}
+	
+		@media #{$medium-up} {
+			width: 7.1vw;
+			height: 7.1vw;
+		}
+
+		@media #{$large-up} {
+			width: 5.6vw;
+			height: 5.6vw;
+		}
+
+		@media #{$xlarge-up} {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+
+/* Cross-sell Heading */
+
+	&__heading {
+		clear: both;
+		display: block;
+		font-family: $heading-font;
+		font-weight: 300;
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+
+		&--is-centered {
+			margin: 0 3.75rem 2rem 3.75rem;
+		}
+	}
+
+/* Cross-sell Link */
+
+	&__link {
+	
+		color: $white;
+		line-height: 1.25rem;
+		box-shadow: 0 0 0 1px $white;
+		border-radius: 2px;
+		padding: 0.75rem;
+		text-align: center;
+
+		@media #{$small-up} {
+			display: block;
+		}
+
+		@media #{$medium-up} {
+			display: inline-block;
+		}
+
+		&:hover, 
+		&:focus {
+			box-shadow: 0 0 0 3px $white;
+			text-decoration: none;
+			color: $white;
+		}
+
+		&--is-centered {
+
+			@media #{$small-up} {
+				margin: 0 1rem;
+			}
+
+			@media #{$medium-up} {
+				margin: 0 3.75rem;
+			}
+		}
+
+		&--is-secondary {
+			box-shadow: 0 0 0 0;
+			font-weight: 300;
+			padding-bottom: 0;
+
+			&:hover, 
+			&:focus {
+				box-shadow: 0 0 0 0;
+				text-decoration: underline;
+			}
+		}
+
+		&--is-positioned {
+			position: absolute;
+			bottom: 1.5rem;
+			left: 1.5rem;
+			display: block;
+			width: calc(100% - 3rem);
+		}
+	}
+}

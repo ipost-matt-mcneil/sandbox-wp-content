@@ -1,0 +1,57 @@
+/* Subheading */
+
+.subheading {
+
+/* Subheading Title */
+
+	&__title {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+		text-align: right;
+
+		@media #{$small-up} {
+			top: -1.50rem;
+		}
+
+		@media #{$medium-up} {
+			top: 0;
+		}
+	}
+
+/* Subheading Link */
+
+	&__link {
+		display: inline-block;
+		font-weight: 300;
+
+		@media #{$small-up} {
+			margin: 0 0 0 0;
+		}
+
+		@media #{$medium-up} {
+			margin: 0 0 0 1.5rem;
+		}
+
+		&:visited {
+			color: $link-color;
+		}
+	}
+
+/* Subheading Link Container */
+
+	&__link-container {
+		
+		@media #{$small-up} {
+			position: absolute;
+			top: 1rem;
+			left: 0;
+		}
+
+		@media #{$medium-up} {
+			position: static;
+			display: inline-block;
+			top: 0;
+		}
+	}
+}

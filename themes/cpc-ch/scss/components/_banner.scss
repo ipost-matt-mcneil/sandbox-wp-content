@@ -1,0 +1,93 @@
+// 
+// Base
+//
+
+.banner {
+	width: 100%;
+
+	@media #{$small-up} {
+		margin-top: -3.25rem;
+	}
+
+	@media #{$large-up} {
+		margin-top: -4.5rem;
+	}
+
+	/* Is Post */
+
+	&--is-post {
+		position: fixed;
+		top: 0;
+		margin-top: 0;
+		display: block;
+	}
+
+	/* Is Top */
+
+	&--is-top {
+		position: absolute;
+	}
+
+	/* Is Hidden */
+
+	&--is-hidden {
+		display: none;
+	}
+
+// Container
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	&__container {
+		margin: 0 auto;
+		max-width: 90rem;
+
+		/* Is Post */
+
+		&--is-post {
+			border-bottom: 20rem solid $white;
+		}
+	}
+
+// Image
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	&__img {
+		width: 100%;
+		background: none no-repeat center center/cover;
+
+		@media #{$small-up} {
+			height: 6.25rem;
+		}
+
+		@media #{$medium-up} {
+			height: 8.5rem;
+		}
+
+		@media #{$large-up} {
+			height: 13.25rem;
+		}
+
+		/* Is Post */
+
+		&--is-post {
+
+			@media #{$small-up} {
+				height: 19.5rem;
+			}
+
+			@media #{$medium-up} {
+				height: 23.75rem;
+			}
+
+			@media #{$large-up} {
+				height: 31.25rem;
+			}
+		}
+
+		/* No Image */
+
+		&--no-img {
+			background-image: url("/blogs/wp-c/themes/cpc-ch/img/placeholder.jpg");
+		}
+	}
+}

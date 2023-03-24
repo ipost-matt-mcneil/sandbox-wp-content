@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["es2015", {"modules": false}],
+    // webpack understands the native import syntax, and uses it for tree shaking
+
+    // Specifies what level of language features to activate.
+    // Stage 4 is finished, 2 is "draft", 0 is strawman.
+    // See https://tc39.github.io/process-document/
+  ],
+  "compact": false,
+  "plugins": ["transform-class-properties"]  
+}

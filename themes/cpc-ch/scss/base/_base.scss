@@ -1,0 +1,36 @@
+// 
+// Base
+//
+
+body {
+	color: $body-color;
+  font-family: $body-font;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html, 
+body {
+
+	/* Mobile Navigation */
+
+	&.is-no-scroll {
+
+		@media #{$small-up} {
+			overflow: hidden !important;
+			padding: 0;
+		}
+
+		@media #{$large-up} {
+			overflow: auto !important;
+		}
+	}
+}
+
+

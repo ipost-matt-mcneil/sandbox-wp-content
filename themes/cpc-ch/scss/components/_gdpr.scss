@@ -1,0 +1,82 @@
+/* GDPR */
+
+.gdpr {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: $gdpr-z-index;
+	margin: auto;
+	width: 90rem;
+	background: $tags-hover-color;
+
+	/* GDPR Is Hidden */
+
+	&--is-hidden {
+		display:none;
+	}
+
+	/* Container */
+
+	&__container {
+		position: relative;
+		padding: 0 1rem 1rem 1rem;
+
+		@media #{$medium} {
+			padding: 0 1.5rem;
+		}
+	}
+
+	/* Title */
+
+	&__title {
+		letter-spacing: 0.5px;
+		color: $body-color;
+		font-weight: 300;
+		padding-top: 2.5rem;
+		margin-bottom: 0.75rem;
+
+		@media #{$medium} {
+			padding-top: 1.5rem;
+		}
+	}
+
+	/* Content */
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		@media #{$medium} {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+
+	/* Text */
+
+	&__text {
+		font-size: 0.75rem;
+		color: $footer-background-color;
+		letter-spacing: 0;
+		line-height: 1.25rem;
+		margin-bottom: 1.5rem;
+
+		@media #{$medium} {
+			margin-right: 2rem;
+		}
+
+		@media #{$xlarge-up} {
+			margin-bottom: 1.3125rem;
+		}
+	}
+
+	/* Button */
+
+	&__button {
+
+		@media #{$medium} {
+			white-space: nowrap;
+		}
+	}
+}

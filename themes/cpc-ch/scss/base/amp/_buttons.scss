@@ -1,0 +1,32 @@
+/* Button */
+
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"],
+button,
+.button {
+	color: $white;
+	background-color: $link-color;
+	border-radius: 0.125rem;
+	border:0.125rem solid $link-color;
+	line-height: 1.25rem;
+	font-size: 1rem;  
+	width: calc(100% - 2rem);
+	padding: 0.875rem 1rem;
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	
+	&.text-button { 
+		text-align: center;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $cross-sell-color;
+		border-color: $cross-sell-color;
+		color: $white;
+		text-decoration: none;
+	}
+}
+

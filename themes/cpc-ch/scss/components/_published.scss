@@ -1,0 +1,22 @@
+// 
+// Published
+//
+
+.published {
+	font-weight: 300;
+
+	@media #{$small-only} {
+		margin-bottom: 1.5rem;
+	}
+
+	&--no-author {
+
+		@media #{$medium-up} {
+			margin-bottom: 0;
+		}
+
+		@media #{$large-up} {
+			position: absolute;
+		}
+	}
+}

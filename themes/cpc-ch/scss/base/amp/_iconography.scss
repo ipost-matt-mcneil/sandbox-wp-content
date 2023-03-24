@@ -1,0 +1,42 @@
+/* Iconography */
+
+.icon {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+
+  &:before {
+    background-image: url("/blogs/wp-c/themes/cpc-ch/img/sprite.svg");
+  }
+
+  &--logo-desktop-en,
+  &--logo-desktop-fr {
+    display: none;
+  }
+
+  &--hamburger {
+    cursor: pointer;
+  }
+
+  &--close {
+    cursor: pointer;
+  }
+
+  &--open-in-new-window {
+    margin-left: 0.5rem;
+    position: relative;
+    top: -2px;
+  }
+
+  &--arrow {
+    bottom: 3px;
+  }
+
+  &--social {
+    margin-right: 1.5rem;
+  }
+
+   &--email {
+    margin-right: 0;
+  }
+}

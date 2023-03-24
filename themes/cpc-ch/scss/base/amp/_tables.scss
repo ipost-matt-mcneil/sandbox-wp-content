@@ -1,0 +1,90 @@
+/* Tables */
+
+.table {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 1.5rem 0 3rem 0;
+
+	/* Table Previous */
+
+	&__prev {
+		margin: 1.5rem 0 2.25rem 0;
+		display: inline-block;
+	}
+
+	/* Table Next */
+
+	&__next {
+		position: absolute;
+		top: 1.5rem;
+		right: 0;
+	}
+
+	/* Table Icon */
+
+	&__icon {
+		position: relative;
+		top: -0.25rem;
+		margin-left: 0.75rem;
+
+		&--is-prev {
+			margin-right: 0.75rem;
+		}
+
+		&--is-next {
+			transform: rotate(180deg);
+		}
+	}
+
+	/* Table Table */
+
+	&__table {
+		width: 100%;
+		border: 0;
+		border-collapse: collapse;
+		position: relative;	
+		margin-top: 3.5rem;
+	}
+
+	/* Table Row */
+
+	&__row {
+		border-bottom: 1px solid $footer-border-color;
+		width: 100%;
+	}
+
+	/* Table Cell */
+
+	&__cell {
+		padding: 1.5rem;
+		border: 0;
+		word-wrap: break-word;
+		vertical-align: top;
+		font-weight: 300;
+	}
+
+	/* AMP Carousel */
+
+	.amp-carousel-button-prev {
+		background-color: transparent;
+		background-image: none;
+		top: 1.25rem;
+		left: -0.5rem;
+  	color: $link-color;
+  	margin: 0;
+  	width: 4rem;
+  	cursor: pointer;
+	}
+
+	.amp-carousel-button-next {
+		background-color: transparent;
+		background-image: none;
+		top: 1.25rem;
+		right: -0.5rem;
+  	color: $link-color;
+  	margin: 0;
+  	width: 4rem;
+  	cursor: pointer;
+	}
+}

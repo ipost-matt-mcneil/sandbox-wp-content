@@ -1,0 +1,165 @@
+// 
+// Base grid styles
+//
+
+//
+// Standard margin at the bottom of all rows in CPC design. 
+// Each component rendered by CMS is wihtin a .iw_component 
+// Each component should have a margin below
+
+// Space or margin separating components
+// - can be used with either the class name (for margin-bottom) 
+//   or the variable if a margin needs to be added to top
+$component-space-default: 6.25rem;
+$component-space-large-up: 6.25rem;
+$component-space-medium-up: 4rem;
+$component-space-small-up: 4rem;
+
+.cpc-component > .row:last-child,
+.cpc-component-wrapper {
+    margin-bottom: $component-space-small-up; 
+
+    @media #{$small-up} {
+      margin-bottom: $component-space-small-up;
+    }
+
+    @media #{$medium-up} {
+      margin-bottom: $component-space-medium-up;
+    }
+
+    @media #{$large-up} {
+      margin-bottom: $component-space-large-up;
+    }
+}
+
+// .iw-container is a class that LiveSite adds to DOM elements that already have class "row". 
+// .iw-container contains the following hard-wired important styles in LiveSite edit / preview, so it is likely 
+// to be baked into Live pages as well:
+// .iw_container
+// {
+//   max-width:1440px !important;
+//   margin-left: auto !important;
+//   margin-right: auto !important;
+// }
+// Then LiveSite pages have DOM elements that get added that look like this:
+//
+//     <div class="row iw_row iw_container" id="rowj0to5p4h"> 
+//
+// This overrides the default Foundation grid layout of margin-left: -1rem and margin-right: -1rem. 
+// This messes up the Foundation grid, reducing available space for a row's contents by 32px. 
+.iw_container {
+  max-width: 90rem !important;
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
+
+//
+// Padding from auto-generated iw-columns messes up the layouts of components - since we're wrapping our
+// components with foundation grid rows / columns (which we should) the LiveSite columns shouldn't 
+// impact page layouts
+.iw_columns { 
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+//
+// Overrides for L4 templates. Unfortunately we still have LiveSite artifacts getting in the 
+// way of the Foundation grid setup
+//
+.cpc-l4-template-lhs .iw_section > .iw_row { 
+  margin-right: auto !important;
+}
+.cpc-l4-template-rhs .iw_section > .iw_row { 
+  margin-left: auto !important; 
+  margin-right: auto !important;
+}
+
+.columns.cpc-l4-template-rhs { 
+  padding-left: 0;
+  padding-right: 0;
+
+  @media #{$large-up} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Flexbox basic support in Foundation 5 */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  &:before { width:100%; }//ensure the row clearfix won't break our layout
+  .columns { float:none; }
+}
+
+//
+// A dev helper that shows onscreen what responsive breakpoint you're at. 
+//
+.dev-size:after { 
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #000000;
+  display: block;
+  left: 3rem;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 3rem;
+
+  @media #{$small-up} {
+    content: "Mobile - Small";
+  }
+
+  @media #{$medium-up} {
+    content: "Tablet - Medium";
+  }
+
+  @media #{$large-up} {
+    content: "Desktop - Large";
+  }
+
+  @media #{$xlarge-up} {
+    content: "Desktop - X-Large";
+  }
+}
+
+/**
+ * cpc full screen width, currently used in homepage.
+ */
+.cpc-fsw {
+  //Override some of the footer styles
+  .cpc-footer-container {
+    left: 0;
+    width: 100%;
+    .cpc-footer {
+      max-width: 90rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+/**
+ * Content block(cpc-cb) width. Intent is to restrict the content width to match our grid system.
+ */
+.cpc-component .cpc-cb,
+.cpc-cb.row,
+.cpc-cb {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media #{$small-up} {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media #{$medium-up} {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+  }
+  @media #{$large-up} {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
+  @media #{$xlarge-up} {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+}
+

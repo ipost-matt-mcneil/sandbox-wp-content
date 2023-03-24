@@ -1,0 +1,34 @@
+/* Heading */
+
+.heading {
+  /* Heading Is Tag */
+  &--is-tags {
+    @media #{$small-up} {
+      &:before {
+        content: 'Tagged: ';
+      }
+    }
+    @media #{$medium-up} {
+      &:before {
+        content: 'All posts tagged: ';
+      }
+    }
+  }
+}
+
+html[lang="fr_CA"] {
+  .heading {
+    &--is-tags {
+      @media #{$small-up} {
+        &:before {
+          content: 'Tagué : ';
+        }
+      }
+      @media #{$medium-up} {
+        &:before {
+          content: 'Tous les billets de blogue tagués: ';
+        }
+      }
+    }
+  }
+}

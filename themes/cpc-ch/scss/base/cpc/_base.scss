@@ -1,0 +1,109 @@
+// 
+// Base styles
+//
+html { 
+  // overflow auto fixes an issue with the fixed mobile
+  // toolbar temporarily hiding in the middle of a translate3d 
+  // animation for the mobile table next/prev icons. 
+  // mobile only - desktop rule breaks desktop toolbar 
+  @media #{$small-only} {
+    //overflow: auto;
+  }
+
+  // Force MS IE & Edge to auto-hide scrollbar mode, 
+  // so that scrollbar widths are not included when determining
+  // media query breakpoints. This keeps IE consistent with 
+  // other browsers
+  // Commenting out as a fix for IA-3422. The media query
+  // breakpoint issue should be considered a browser bug.
+  // -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  // See https://stackoverflow.com/a/9739021/442472 - 
+  // webkit quick fix to prevent hardware acceleration from 
+  // messing up text during animation. Note that I tried the solution
+  // suggested at https://stackoverflow.com/a/12350204/442472 but
+  // I wasn't able to get it working.
+  // Safari default aliasing is subpixel-antialiased. We're just
+  // telling it to use the default so that hardware acceleration
+  // doesn't switch text from this to antialiased mid-animation
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  // Not supported on IE and Edge at this time, but it's a quick 
+  // and easy solution to get smooth scrolling when using JS
+  // to scroll to an element. Chrome, FF support this at this time
+  // Commenting this out as it causes back to top issues
+  // scroll-behavior: smooth;
+}
+
+body { 
+  background-color: $white !important; 
+
+  // Force momentum scrolling behaviour on iOS devices. 
+  // Tried adding this to the closest area of the DOM where momentum scrolling is actually 
+  // required, as well as to parent elements, but momentum scrolling doesn't properly work 
+  // when applied in those places. It seems required with our DOM structure to have it defined
+  // at the body level
+  -webkit-overflow-scrolling: touch;
+
+  // Note - unfortunately overflow rule is required for enabling of momentum scrolling, but on mobile, 
+  // window.scrollY returns 0 all the time, so it's impossible to know where the document is currently
+  // scrolled to, something that we need to know for some of our components
+  // overflow-x: auto;
+}
+
+//:not(body):focus {
+  // Focus ring cross browsers.
+  //
+  // When the whole body get focused, IE will display the outline also but not other browsers.
+  // So excluding the body to avoid the inconsistency.
+  //outline: $mid-blue solid 1px;
+//}
+
+#main-content {
+  background-color: $mid-light-grey; 
+  margin-top:rem-calc(76);  
+}
+
+  // large desktop left/right whitespace around content
+  #main-content {
+    > div:first-child { margin-top:rem-calc(-76); }
+    > .cpc-main-content--row,
+    > div { background-color: $white; }
+    
+    > .row > .column,
+    > .row > .columns { 
+      padding-left: $global-offset + ($column-gutter / 2);
+      padding-right: $global-offset + ($column-gutter / 2);  
+
+      @media #{$small-up} {
+        padding-left: $global-small-offset + ($column-gutter / 2);
+        padding-right: $global-small-offset + ($column-gutter / 2);
+      }
+
+      @media #{$medium-up} {
+        padding-left: $global-medium-offset + ($column-gutter / 2);
+        padding-right: $global-medium-offset + ($column-gutter / 2);
+      }
+      
+      @media #{$large-up} {
+        padding-left: $global-large-offset + ($column-gutter / 2);
+        padding-right: $global-large-offset + ($column-gutter / 2); 
+      }
+
+      @media #{$xlarge-up} {
+        padding-left: $global-xlarge-offset + ($column-gutter / 2);
+        padding-right: $global-xlarge-offset + ($column-gutter / 2);
+      }
+    }
+
+    //
+    // TODO:
+    //  For some reason, the build script does not correctly generate the .row max-width.
+    //  I temporarily fix it at here. But we should fix the build script
+    //
+    > .row {
+      max-width: 90rem;
+    }
+  }
+
+

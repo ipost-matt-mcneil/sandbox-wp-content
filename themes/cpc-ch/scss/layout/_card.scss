@@ -1,0 +1,307 @@
+/* Card */
+
+.card {
+	color: $body-color;
+	display: block;
+	position: relative;
+	padding-bottom: 0.5rem;
+
+	&:hover, 
+	&:focus {
+		text-decoration: none;
+		color: $body-color;
+
+		.card__title {
+			border-bottom: 1px solid $link-color;
+		}
+	}
+
+	&:visited {
+
+		.card__author {
+			color: $body-color;
+		}
+	}
+
+	/* Card Is List */
+
+	&--is-list {
+
+		@media #{$medium-up} {
+			float: left;
+			width: auto;
+		}
+	}
+
+/* Card Image Wrapper */
+
+	&__img-wrapper {
+		position: relative;
+
+		@media #{$medium-up} {
+			overflow: hidden;
+		}
+
+		/* Card Image Wrapper Is List Page */
+
+		&--is-list {
+
+			@media #{$medium-up} {
+				width: 9.75rem;
+			}
+
+			@media #{$large-up} {
+				width: 16.75rem;
+			}
+		}
+
+		/* Card Image Wrapper Is Mask */
+
+		&--is-mask {
+		
+			@media #{$small-up} {
+				display: none;
+			}
+			
+			@media #{$large-up} {
+				display: block;
+		    position: absolute;
+		    width: 100%;
+		    height: 500px;
+		    top: 0;
+		    left: calc(50% + 1px);
+		    z-index: 9;
+		    padding-right: 50%;
+			}
+
+			.card__img {
+	    	background-position: top 0 left -720px;
+	    }
+		}
+	}
+
+/* Card Image */
+
+	&__img {
+		width: 100%;
+		height: inherit;
+		display: inline-block;
+		float: left;
+		background-position: center center;
+		transition: background-size 0.3s linear;
+		background-size: auto 100%;
+		position: relative;		
+
+		@media #{$small-only} {
+			float: none;
+		}
+
+		&:after {
+			clear: both;
+			content: ' ';
+		}
+
+		&:hover {
+			background-size: auto 105%;
+		}
+
+		&--is-home-feature,
+		&--is-mask {
+			&:hover {
+				background-size: auto 100%;
+			}
+		}
+
+		&--is-landing {
+			margin: 2.25rem 0 1.5rem 0;
+			width: 18.25rem;
+		}
+
+		&--no-img {
+			background-image: url("/blogs/wp-c/themes/cpc-ch/img/placeholder.jpg");
+		}
+	}
+
+	& .icon {
+		position: absolute;
+		top: 1.25rem;
+		right: 1.25rem;
+		padding: 0.5rem;
+		background-color: rgba(255,255,255,0.8);
+	} 
+
+	&__ratio {
+		margin-top: 56.25%;
+
+		// List Page
+
+		&--is-list {
+
+			@media #{$medium-up} {
+				margin-top: 75%;
+			}
+		}
+	}
+
+/* Card Image Overlay */
+
+	&__img-overlay {
+		
+		@media #{$small-up} {
+      display: none;
+    }
+
+    @media #{$large-up} {
+    	display: block;
+    	width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    background-repeat: no-repeat;
+	    filter: blur(0.5rem);
+	    height: 5rem;
+	    background-position: bottom -1rem center;
+    	background-size: calc(100% + 5rem);
+    }
+
+    /* Card Image Overlay Is Subcategory Feature */
+
+    &--is-subcategory-feature {
+			
+			@media #{$large-up} {
+				background-position: bottom -1rem center;
+    		background-size: calc(200% - 3rem);
+    		height: 5.75rem;
+			}
+
+		}
+
+		/* Card Image Overlay Is Home Feature */
+
+    &--is-home-feature {
+			
+			@media #{$large-up} {
+    		background-position: top calc(100% + 1rem) center;
+    		background-size: auto 500px;
+    		width: calc(100% - 17rem);
+    		height: 7.75rem;
+			}
+		}
+  }
+
+/* Card White Overlay */
+
+  &__white-overlay {
+
+		@media #{$small-up} {
+			display: none;
+		}
+
+		@media #{$medium-up} {
+			display: block;
+			width: 100%;
+			height: 8rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $white;
+		}
+
+		@media #{$large-up} {
+			background: $transparency-color;
+		}
+
+		/* Card White Overlay Is Home Feature  */
+
+		&--is-home-feature {
+			
+			@media #{$large-up} {
+				height: 9.5rem;
+			}
+		}
+	}
+
+/* Card Text */
+
+	&__text {
+		background: $transparency-color;
+		position: relative;
+		clear: both;
+
+		@media #{$small-up} {
+			padding: 1.5rem 0 3rem 0;
+		}
+
+		@media #{$medium-up} {
+			padding: 1.5rem 0 3.75rem 0;
+		}
+
+		/* Card Text Is List */
+
+		&--is-list {
+
+			@media #{$medium-up} {
+				width: calc(100% - 9.75rem);
+				clear: none;
+				float: left;
+				padding: 0 0 0 2rem;
+				margin: 0;
+			}
+
+			@media #{$large-up} {
+				width: calc(100% - 16.75rem);
+			}
+		}
+	}
+
+/* Card Title */
+
+	&__title {
+		display: inline;
+		font-family: $body-font;
+		font-weight: 300;
+		line-height: 1.75rem;
+
+		@media #{$small-up} {
+			font-size: 1.125rem;
+		}
+
+		@media #{$medium-up} {
+			font-size: 1.25rem;
+		}
+	}
+
+/* Card Author */
+
+	&__author {
+		margin-top: 1rem;
+		font-weight: 300;
+	}
+
+/* Card Button */
+
+	&__button {
+		margin: 1rem 0 1px 0;
+
+		&:hover {
+			background: $white;
+			box-shadow: 0 0 0 1px $cross-sell-color;
+		}
+	}
+
+	/* Card Link */
+
+	&__link {
+		color: $link-color;
+		font-weight: 300;
+		display: inline-block;
+
+		@media #{$small-only} {
+			margin-bottom: 3rem;
+		}
+
+		&:visited {
+			color: $link-color;
+		}
+	}
+}

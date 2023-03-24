@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search_mobile" transform="translate(-823.000000, -247.000000)">
+            <g id="Clear-text-button" transform="translate(823.000000, 247.000000)">
+                <polygon id="Rectangle-6" fill="#666666" points="5.49298835 0 18 0 18 11.8681319 5.49298835 11.8681319 0.669990234 5.93406593"></polygon>
+                <g id="Cancel" transform="translate(8.240000, 3.428571)" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M0.13557487,0.514285714 L4.74512044,4.97142857" id="Line-Copy"></path>
+                    <path d="M4.74512044,0.514285714 L0.13557487,4.97142857" id="Line-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

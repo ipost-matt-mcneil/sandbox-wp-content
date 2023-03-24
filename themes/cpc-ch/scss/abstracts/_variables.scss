@@ -1,0 +1,85 @@
+// 
+// Variables
+//
+
+// Fonts
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$body-font                  : Roboto, sans-serif;
+$heading-font               : Roboto Slab, serif;
+
+// Colours
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$white                      : #FFFFFF;
+$black                      : #111111;
+$body-color                 : #333333; // Black
+$body-background-color      : #E5E5E5; // Grey
+$link-color                 : #0467C6; // Blue
+$cross-sell-color           : #004990; // Blue
+$border-color               : #D9D9D9; // Grey
+$transparency-color         : rgba(255, 255,255, 0.86); // White
+$gradient-left-color        : #004990; // Blue
+$gradient-right-color       : #0467C6; // Blue
+$cta-background-color       : #F0F0F0; // Grey
+$tags-hover-color           : #E5EFF9; // Blue
+$footer-background-color    : #666666; // Grey
+$footer-border-color        : #CBCBCB; // Grey
+$light-grey                 : #F0F0F0;
+
+// Z-Index
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$header-container-z-index    	: 8;
+$skip-to-main-content-z-index	: 104;
+$main-container-z-index    		: 1;
+$ribbon-z-index  							: 1;
+$footer-z-index    						: 7;
+$gdpr-z-index               	: 150;
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------
+ *
+ * Generic solution for elements that are fixed position on touch enabled devices
+ * where a virtual keyboard is present
+ */
+
+$cpc-layers: (
+cpc-accordion-tab-content: 10,
+cpc-carousel-dots: 10,
+cpc-carousel-slider: 20,
+cpc-accordion-tab: 20,
+cpc-mobile-signin: 20,
+cpc-tab-toc: 20,
+cpc-shop-items--discount: 25,
+cpc-shop-items: 30,
+cpc-shop-items--hover: 31,
+cpc-home-mobile-toolbar: 35,
+cpc-carousel-buttons: 30,
+cpc-mobilemenu: 40,
+cpc-back-to-top: 35,
+cpc-toolbar: 40,
+cpc-skipnav: 104,
+cpc-fixed-topbar: 101,
+cpc-mega-nav-overlay: 100,
+cpc-mega-nav-open: 102,
+cpc-mega-nav-utilty: 102,
+cpc-mega-nav-micro: 103,
+cpc-stick-utility-bar: 104,
+cpc-search: 104,
+cpc-gdpr-cookie-banner: 150,
+cpc-modal: 200,
+cpc-modal-close-icon: 210,
+cpc-lang-selector-overlay: 999
+)
+
+
+
+
+
+

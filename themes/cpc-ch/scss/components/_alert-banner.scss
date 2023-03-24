@@ -1,0 +1,86 @@
+// Global message banner new 2018 styling 
+
+.cpc-global-alert-banner { 
+  position: relative;
+  overflow: hidden;
+  transition: height 0.25s ease-in;
+  z-index: 3;
+
+  .close-icon { 
+    position: absolute;
+    top: .625rem;
+    right: 1rem;
+    @media #{$large-up} {
+      top: calc(50% - .75rem);
+      right: 1.75rem;
+    }
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../img/icons/cancel.svg") no-repeat 50% 50%;
+  }
+
+  &.close { 
+    // overrides inline height rule that gets added via JS for animation purposes
+    height: 0 !important; 
+  }
+}
+
+@media #{$large-up} {
+  .cpc-global-alert-banner-inner--toolbar {
+    .close-icon {
+      right: 5.75rem;
+    }
+  }
+}
+
+.cpc-global-alert-banner-inner { 
+  position: relative;
+  padding: .75rem 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  background-color: $cp-blue;
+  color: $white;
+
+  a { 
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.cpc-global-alert-banner-inner { 
+  margin: 0 auto;
+
+  .message { 
+    position: relative;
+    padding: 0 3.5rem;
+    color: $white;
+
+    @media #{$large-up} {
+      padding: 0;
+      left: 1.75rem;
+      max-width: 49rem;
+    }
+    @media #{$xlarge-up} {
+      max-width: 50rem;
+    }
+    margin: 0 auto;
+  }
+
+  .info, .warn { 
+    position: relative;
+  } 
+
+  .info:after { 
+    content: '';
+    position: absolute;
+    top: -.125rem;
+    left: -2.5rem;
+    @media #{$large-up} {
+      left: -2.75rem;
+    }
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../img/icons/alert.svg") no-repeat 0 50%; 
+  }
+}

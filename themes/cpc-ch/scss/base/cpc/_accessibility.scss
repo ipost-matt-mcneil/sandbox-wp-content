@@ -1,0 +1,19 @@
+// Accessibility  Classes
+
+.visually-hidden {
+  position: absolute; 
+  left: -9999px; 
+  top: -9999px; 
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0;
+  border:0;
+}
+
+// Avoid focus ring on focusable elements that were clicked by mouse. Fixes
+// A Chrome bug - see focus-ring-handler.js for details
+[data-activated-via='mouse']:focus { 
+  outline: 0;
+}

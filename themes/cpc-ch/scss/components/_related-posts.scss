@@ -1,0 +1,15 @@
+/* Related Posts */
+
+.related-posts {
+
+	@media #{$small-up} {
+    margin-top: 3rem;
+    padding: 0;
+    margin-bottom: -3rem;
+  }
+
+  @media #{$medium-up} {
+    margin-top: 3.75rem;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Infographics</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Infographics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21" transform="translate(1.000000, 1.000000)">
+            <polyline id="Stroke-1" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 19 11 11 18 14 24 6"></polyline>
+            <path d="M26,6 C26,7.104 25.104,8 24,8 C22.896,8 22,7.104 22,6 C22,4.896 22.896,4 24,4 C25.104,4 26,4.896 26,6" id="Fill-3" fill="#FFFFFF"></path>
+            <path d="M26,6 C26,7.104 25.104,8 24,8 C22.896,8 22,7.104 22,6 C22,4.896 22.896,4 24,4 C25.104,4 26,4.896 26,6 Z" id="Stroke-5" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M20,14 C20,15.104 19.104,16 18,16 C16.896,16 16,15.104 16,14 C16,12.896 16.896,12 18,12 C19.104,12 20,12.896 20,14" id="Fill-7" fill="#FFFFFF"></path>
+            <path d="M20,14 C20,15.104 19.104,16 18,16 C16.896,16 16,15.104 16,14 C16,12.896 16.896,12 18,12 C19.104,12 20,12.896 20,14 Z" id="Stroke-9" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13,11 C13,12.104 12.104,13 11,13 C9.896,13 9,12.104 9,11 C9,9.896 9.896,9 11,9 C12.104,9 13,9.896 13,11" id="Fill-11" fill="#FFFFFF"></path>
+            <path d="M13,11 C13,12.104 12.104,13 11,13 C9.896,13 9,12.104 9,11 C9,9.896 9.896,9 11,9 C12.104,9 13,9.896 13,11 Z" id="Stroke-13" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7,19 C7,20.104 6.104,21 5,21 C3.896,21 3,20.104 3,19 C3,17.896 3.896,17 5,17 C6.104,17 7,17.896 7,19" id="Fill-15" fill="#FFFFFF"></path>
+            <path d="M7,19 C7,20.104 6.104,21 5,21 C3.896,21 3,20.104 3,19 C3,17.896 3.896,17 5,17 C6.104,17 7,17.896 7,19 Z" id="Stroke-17" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Stroke-19" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 0 0 26 26 26"></polyline>
+        </g>
+    </g>
+</svg>

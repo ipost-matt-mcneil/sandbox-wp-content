@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Ticket</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ticket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g fill="#FFFFFF" fill-rule="nonzero" id="Shape" stroke="#000000">
+            <path d="M11.32,4.48 C11.0177154,4.17965165 10.84773,3.77112802 10.84773,3.345 C10.84773,2.91887198 11.0177154,2.51034835 11.32,2.21 L9.61,0.5 L0.5,9.61 L2.21,11.32 C2.60334941,10.8601548 3.22132874,10.659707 3.80970243,10.8011206 C4.39807612,10.9425342 4.8574658,11.4019239 4.99887939,11.9902976 C5.14029298,12.5786713 4.93984525,13.1966506 4.48,13.59 L6.19,15.3 L15.3,6.19 L13.59,4.48 C13.2896516,4.78228456 12.881128,4.95226998 12.455,4.95226998 C12.028872,4.95226998 11.6203484,4.78228456 11.32,4.48 Z"></path>
+            <path d="M7.9,4.9 L10.9,7.9"></path>
+        </g>
+    </g>
+</svg>

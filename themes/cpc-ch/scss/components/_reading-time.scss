@@ -1,0 +1,20 @@
+/* Reading Time */
+
+.reading-time {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  @media #{$medium-up} {
+    position: absolute;
+    top: -0.25rem;
+    right: 1rem;
+  }
+
+  /* Reading Time Icon */
+
+  &__icon {
+    position: relative;
+    top: -3px;
+    margin-right: 0.25rem;
+  }
+}

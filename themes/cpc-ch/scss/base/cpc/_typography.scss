@@ -1,0 +1,225 @@
+// 
+// Global typography settings
+//
+// font-family definitions in: /cpc/scss/foundation/_settings.scss
+//
+
+// Table of Contents
+// Foundation Settings
+//
+// a. Globals
+// b. Headings
+// c. Paragraphs and lists
+// d. 
+// e. 
+// f. 
+// g. 
+// z. Specific Responsive
+
+
+
+// a. Globals
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$line-spacing: 1.5rem;
+$letter-spacing: 0.2px;
+
+body {
+  letter-spacing: $letter-spacing;
+}
+
+
+// b. Headings
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+h1, h2, h3 { 
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: $black;
+  margin-top: 0;
+}
+
+h4, h5 {
+  font-family: $font-family-sans-serif;  
+  letter-spacing: 0.4px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-bottom: $line-spacing;
+  letter-spacing: 0.3px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: $line-spacing;
+  letter-spacing: 0.3px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+  color: $black;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: $off-black;
+  font-weight: 400;
+}
+
+
+// c. Paragraphs and lists
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+p,
+.content {
+  color: $off-black;
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+
+  &+ input[type="button"], 
+  &+ input[type="reset"], 
+  &+ input[type="submit"],
+  &+ button,
+  &+ .button {
+    margin-top: $line-spacing; 
+  }
+
+  + p,
+  + .content {
+    margin: 0 0 0.75rem;
+  }    
+}
+
+strong, b {
+  font-weight: 500;
+} 
+
+sup { 
+  font-size: .625rem;
+}
+
+label { 
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $off-black;
+  font-weight: 500;
+}
+
+ul, ol, dl {
+  margin-left: 1rem;
+  line-height: 1.5rem;
+}
+
+p,
+.content {
+  ul { 
+    list-style-type: disc;
+  }
+  ul, ol {    
+    li {
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+    }
+    ul { 
+      list-style-type: disc;      
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+  }
+}
+
+.legal, .legend {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: $charcoal-grey;
+
+  a {
+    color: $mid-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  ol, ul {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: $charcoal-grey;
+  }
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+// Used when anchor tags have inner <sup> tags to ensure link underline isn't shown for <sup> text
+a sup {
+    text-decoration: none;
+    display: inline-block;
+}
+
+// z. Responsive
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@media #{$small-only} {
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.2px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.4px;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media #{$medium-only} {
+}
+
+@media #{$large-only} {
+}
+
+@media #{$xlarge-only} {
+}

@@ -1,0 +1,5 @@
+iframe {
+  &.instagram-media {
+    margin: 3rem auto 3rem auto; //TS took out the !important that causing AMP issue
+  }
+}

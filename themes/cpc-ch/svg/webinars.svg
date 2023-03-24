@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Webinars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Webinars" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(1.000000, 1.000000)">
+            <path d="M24.502,26 L1.498,26 C0.67,26 0,25.329 0,24.502 L0,1.498 C0,0.671 0.67,0 1.498,0 L24.502,0 C25.33,0 26,0.671 26,1.498 L26,24.502 C26,25.329 25.33,26 24.502,26 Z" id="Stroke-1" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M0,6 L26,6" id="Stroke-3" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M10,14 C10,15.104 9.104,16 8,16 C6.896,16 6,15.104 6,14 C6,12.896 6.896,12 8,12 C9.104,12 10,12.896 10,14 Z" id="Stroke-5" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4,22 C4,19.791 5.791,18 8,18 C10.209,18 12,19.791 12,22 L4,22 Z" id="Stroke-7" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M23,13 C23,15.209 21.209,17 19,17 L13,17 C15,16 15,14.196 15,13 C15,10.791 16.791,9 19,9 C21.209,9 23,10.791 23,13 Z" id="Stroke-9" stroke="#0067CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4,3 C4,3.553 3.552,4 3,4 C2.448,4 2,3.553 2,3 C2,2.447 2.448,2 3,2 C3.552,2 4,2.447 4,3" id="Fill-11" fill="#0067CD"></path>
+            <path d="M7,3 C7,3.553 6.552,4 6,4 C5.448,4 5,3.553 5,3 C5,2.447 5.448,2 6,2 C6.552,2 7,2.447 7,3" id="Fill-13" fill="#0067CD"></path>
+            <path d="M10,3 C10,3.553 9.552,4 9,4 C8.448,4 8,3.553 8,3 C8,2.447 8.448,2 9,2 C9.552,2 10,2.447 10,3" id="Fill-15" fill="#0067CD"></path>
+        </g>
+    </g>
+</svg>

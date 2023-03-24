@@ -1,0 +1,45 @@
+//
+// Article Checklist
+//
+
+.ch-article-checklist-title {
+  font-size: 1.125rem;
+  font-family: $body-font;
+  line-height: 1.75rem;
+  color: $body-color;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  display: block;
+  margin: 3rem 0 1.5rem 0;
+}
+
+ul.ch-article-checklist-list {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0 0 3rem 0;
+
+  > li {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0 0 0 2.25rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    color: $footer-background-color;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0.25rem;
+      left: 0;
+      content: ' ';
+      vertical-align: middle;
+      display: inline-block;
+      background-image: url(/blogs/wp-c/themes/cpc-ch/img/icons/checkbox.svg);
+      ackground-position: 0 -4.5em;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

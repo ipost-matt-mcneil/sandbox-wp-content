@@ -1,0 +1,25 @@
+// 
+// Global iconography settings
+//
+
+a.icon-arrow-up,
+a.icon-arrow-down,
+a.icon-arrow-left,
+a.icon-arrow-right { position: relative; }
+a.icon-arrow-up:before, a.icon-arrow-up:after,
+a.icon-arrow-down:before, a.icon-arrow-down:after,
+a.icon-arrow-left:before, a.icon-arrow-left:after,
+a.icon-arrow-right:before, a.icon-arrow-right:after {  content:""; float:right; border: 1px solid #8B8B8B; width: 1px; height:0.5rem; position: absolute; }
+
+a.icon-arrow-up:before { transform: rotate(-45deg); right:1.5rem; top:1.5rem; }
+a.icon-arrow-up:after {  transform: rotate(45deg); right: 1.25rem; top:1.5rem;  }
+
+a.icon-arrow-down:before { transform: rotate(-45deg); right:1.5rem; top:1.5rem; }
+a.icon-arrow-down:after {  transform: rotate(45deg); right: 1.25rem; top:1.5rem;  }
+
+a.icon-arrow-right:before { transform: rotate(-45deg); right:1.75rem; top:1.25rem; }
+a.icon-arrow-right:after {  transform: rotate(45deg);  right: 1.75rem; top:1.55rem; }
+
+.icon--social { cursor: pointer; }
+
+$graphic-icon-size: 3rem;

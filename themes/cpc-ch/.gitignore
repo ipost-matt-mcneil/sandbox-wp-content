@@ -1,0 +1,7 @@
+# /dist/*
+/debug.log
+!/dist/index.php
+# /img/sprite.png
+# /img/sprite.svg
+# /scss/base/_icons.scss
+

@@ -1,0 +1,61 @@
+/* Bio */
+
+.bio {
+  display: flex;
+  margin-bottom: 3.75rem;
+	flex-wrap: wrap;
+
+  &--is-article {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    margin-top: 3rem;
+    padding: 0 0 2rem 0;
+    width: 100%;
+  }
+
+&__img-wrapper {
+  flex: 0 0 7.5rem;
+  flex: 0 0 100%;
+  text-align: center;
+
+    &--no-profile-picture {
+      display: none;
+
+      .bio__text {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 0;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 6rem;
+    text-align: center;
+		margin-bottom: 1.5rem;
+  }
+
+  &__text-wrapper {
+    flex: 0 0 100%;
+  }
+
+  &__text {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  &__heading {
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+  }
+}

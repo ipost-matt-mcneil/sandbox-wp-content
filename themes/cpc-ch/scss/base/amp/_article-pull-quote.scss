@@ -1,0 +1,19 @@
+/* Article Pull Quote */
+
+.entry-content {
+  .ch-pull-quote {
+    font-size: 1.5rem;
+    color: $cross-sell-color;
+    letter-spacing: 0;
+    line-height: 2rem;
+    border-left: 2px solid $cross-sell-color;
+    display: inline-block;
+    padding-left: 1.5rem;
+    font-family: $heading-font;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.4px;
+    margin: 1.5rem 0;
+  }
+}
